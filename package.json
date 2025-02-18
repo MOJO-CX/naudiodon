@@ -28,7 +28,14 @@
   "author": "Streampunk Media Ltd",
   "license": "Apache-2.0",
   "scripts": {
-    "install": "node-gyp rebuild"
+    "prepare": "scripts/build-portaudio.sh",
+    "install": "npm run prepare && node-gyp rebuild",
+    "build": "node-gyp rebuild"
   },
-  "gypfile": true
+  "gypfile": true,
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
 }

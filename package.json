@@ -1,5 +1,5 @@
 {
-  "name": "naudiodon",
+  "name": "@yourusername/naudiodon",
   "version": "2.4.0",
   "description": "Node Stream bindings for PortAudio.",
   "main": "./index.js",
@@ -13,11 +13,11 @@
     "raspberry pi"
   ],
   "bugs": {
-    "url": "https://github.com/Streampunk/naudiodon/issues"
+    "url": "https://github.com/MOJO-CX/naudiodon/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Streampunk/naudiodon.git"
+    "url": "git+https://github.com/MOJO-CX/naudiodon.git"
   },
   "dependencies": {
     "bindings": "^1.5.0"
@@ -25,10 +25,10 @@
   "devDependencies": {
     "@types/node": "^22.13.1"
   },
-  "author": "Streampunk Media Ltd",
+  "author": "MOJO CX LTD",
   "license": "Apache-2.0",
   "scripts": {
-    "prepare": "scripts/build-portaudio.sh",
+    "prepare": "scripts\\build-portaudio.bat",
     "install": "npm run prepare && node-gyp rebuild",
     "build": "node-gyp rebuild"
   },
@@ -37,5 +37,8 @@
     "darwin",
     "linux",
     "win32"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }

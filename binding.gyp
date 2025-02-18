@@ -48,11 +48,11 @@
                                 }
                             }
                         },
-                        "libraries": ["-l../portaudio/bin/portaudio_x64.lib"],
+                        "libraries": ["-l../portaudio/bin/portaudio.lib"],
                         "copies": [
                             {
                                 "destination": "build/Release",
-                                "files": ["portaudio/bin/portaudio_x64.dll"],
+                                "files": ["portaudio/bin/portaudio.dll"],
                             }
                         ],
                     },

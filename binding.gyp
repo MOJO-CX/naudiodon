@@ -59,16 +59,8 @@
               }
             },
             "libraries": [
-               "-l../portaudio/bin/portaudio_x64.lib"
+               "../portaudio/bin/portaudio_x64.lib"
             ],
-            "copies": [
-              {
-                "destination": "build/Release",
-                "files": [
-                  "portaudio/bin/portaudio_x64.dll"
-                ]
-              }
-            ]
           },
         ],
         [

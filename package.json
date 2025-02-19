@@ -29,7 +29,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "prepare": "node scripts/prepare.js",
-    "install": "npm run prepare && node-gyp rebuild",
+    "install": "node scripts/prepare.js && node-gyp rebuild",
     "build": "node-gyp rebuild"
   },
   "gypfile": true,

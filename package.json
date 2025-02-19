@@ -28,7 +28,7 @@
   "author": "MOJO CX LTD",
   "license": "Apache-2.0",
   "scripts": {
-    "prepare": "scripts\\build-portaudio.bat",
+    "prepare": "node scripts/prepare.js",
     "install": "npm run prepare && node-gyp rebuild",
     "build": "node-gyp rebuild"
   },

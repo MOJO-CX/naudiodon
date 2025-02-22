@@ -2,7 +2,8 @@
 
 # Clone PortAudio if needed
 if [ ! -d "portaudio" ]; then
-    git clone https://github.com/PortAudio/portaudio.git
+    # git clone https://github.com/PortAudio/portaudio.git
+    git clone -b mac_screen_capture_kit https://github.com/get-wrecked/portaudio.git
 fi
 
 cd portaudio

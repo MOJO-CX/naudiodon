@@ -26,11 +26,15 @@
                             ],
                         },
                         "link_settings": {"libraries": ["-Wl,-rpath,@loader_path"]},
-                        "libraries": ["libportaudio.dylib"],
+                        "libraries": [
+                            "<!@(ls -1 portaudio/bin/libportaudio.*.dylib | sed 's|.*/||')"
+                        ],
                         "copies": [
                             {
                                 "destination": "build/Release/",
-                                "files": ["portaudio/bin/libportaudio.dylib"],
+                                "files": [
+                                    "<!@(ls -1 portaudio/bin/libportaudio.*.dylib)"
+                                ],
                             }
                         ],
                     },

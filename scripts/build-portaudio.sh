@@ -16,6 +16,7 @@ case $OS in
 
         # Configure with CMake
         cmake .. -DCMAKE_BUILD_TYPE=Release \
+            -DPA_BUILD_SHARED_LIBS=ON \
             -DBUILD_SHARED_LIBS=ON \
             -DPA_USE_COREAUDIO=ON
 
